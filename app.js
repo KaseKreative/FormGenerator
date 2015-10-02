@@ -6,8 +6,8 @@ var express 	= require('express'),
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
  
-app.get('/derp', function (req, res) {
-  res.send('Hello World');
+app.get('/', function (req, res) {
+  res.render('home');
 });
  
 app.listen(port);
