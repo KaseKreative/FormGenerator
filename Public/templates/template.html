@@ -1,6 +1,8 @@
-	<input type='text' ng-model='main.greeting' />
+	<input type='text' ng-model='main.greeting.message' />
 
 
 	<div ng-class="main.greeting">
-	{[{main.greeting}]} {[{"World!"}]}
+	{[{main.greeting.message }]} {[{"World!"}]}
 	</div>
+
+	<div ui-sref='second'>Go To Second</div>
