@@ -7,15 +7,16 @@
 	<link rel="stylesheet" href="master.css">
 	<script src="angular/angular.js"></script>
 	<script src="angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 </head>
 <body ng-app="formGen">
 
 	<h1>{[{"Hello World!"}]}</h1>
-	<input type='text' ng-model='first.greeting' />
 
-	{[{first.greeting}]}
 	<h1>Main</h1>
 	{{{ body }}}
+
+	<ui-view></ui-view>
 
 </body>
 </html>
