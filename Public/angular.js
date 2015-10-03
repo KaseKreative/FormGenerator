@@ -1,6 +1,6 @@
-var app = //Something here
+var app = angular.module('formGen', []);//Something here
 
-.config(['$interpolateProvider',function ($interpolateProvider){
+app.config(['$interpolateProvider',function ($interpolateProvider){
 	$interpolateProvider.startSymbol('{[{');
 	$interpolateProvider.endSymbol('}]}');
 }])
