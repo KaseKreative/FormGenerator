@@ -5,3 +5,13 @@ Home Page
 		<label for='fname'> First Name </label><input id="fname" placeholder="Chris..." inputtype="name">
 	</ul>
 </nav>
+
+<div ng-controller="infoCtrl" class="form-content">
+	<div ng-repeat="row in Info.stuff">
+
+		<label for="{[{ row.pizzaSauce }]}">{[{ row.label }]}</label>
+		<input name="{[{ row.pizzaSauce }]}" type="{[{ row.textType }]}" placeholder="{[{ row.placeHolder }]}"/>
+
+    </div>
+
+</div>
