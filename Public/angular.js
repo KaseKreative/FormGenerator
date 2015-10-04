@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-var app = angular.module('formGen', ["ui.router"])
+var myApp = angular.module("myApp",["ui.router"])
 		   
 		.config(function config($stateProvider) {
 			$stateProvider.state('index',{
@@ -29,9 +29,7 @@ var app = angular.module('formGen', ["ui.router"])
 	 			second.greeting = greeting;
  		})
 
-app.config(['$interpolateProvider',function ($interpolateProvider){
-=======
-var myApp = angular.module("myApp",["ui.router"]);
+
 
 myApp.config(['$interpolateProvider',function ($interpolateProvider){
 >>>>>>> 7b9956fcaf9c4a3957093eb7ef5d434eda5f1589
@@ -41,8 +39,6 @@ myApp.config(['$interpolateProvider',function ($interpolateProvider){
 
 <<<<<<< HEAD
 
-
-=======
 myApp.factory('Info', function(){
 	var Info = {};
 	Info.stuff = [{
@@ -71,6 +67,7 @@ function infoCtrl($scope, Info){
 	$scope.info = Info;
 }
 	
+	//------------------------------------------------------
 	.config(function config($stateProvider) {
 		$stateProvider.state("index", {
 			url:"",
@@ -84,4 +81,5 @@ function infoCtrl($scope, Info){
 
 		first.greeting = "First";
 	})
+	//------------------------------------------------------
 >>>>>>> 7b9956fcaf9c4a3957093eb7ef5d434eda5f1589
