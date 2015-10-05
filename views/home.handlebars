@@ -7,11 +7,18 @@ Home Page
 </nav>
 
 <div ng-controller="infoCtrl" class="form-content">
-	<div ng-repeat="row in Info.stuff">
+	<div ng-repeat="row in info.stuff">
 
 		<label for="{[{ row.pizzaSauce }]}">{[{ row.label }]}</label>
 		<input name="{[{ row.pizzaSauce }]}" type="{[{ row.textType }]}" placeholder="{[{ row.placeHolder }]}"/>
-
     </div>
+</div>   
+	  	<div ng-controller='infoCtrl'>
+		<ul ng-repeat="data in info.stuff">
+			<li>{[{data.label}]}</li>
+			<li>{[{data.inputType}]}</li>
+			<li>{[{data.placeholder}]}</li>
+			<li>{[{data.pizzaSauce}]}</li>
+		</ul>
 
 </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" >
 <head>
 	<meta charset="UTF-8">
 	<title>Howdy World</title>
@@ -8,20 +8,13 @@
 	<script src="angular.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 </head>
-<body>
+<body ng-app="myApp">
 
 	<h1>{[{"Hello World!"}]}</h1>
 
 	<h1>Main</h1>
 
-	<div ng-controller="infoCtrl" >
-		<ul ng-repeat="data in info.stuff">
-			<li>{[{data.label}]}</li>
-			<li>{[{data.inputType}]}</li>
-			<li>{[{data.placeholder}]}</li>
-			<li>{[{data.pizzaSauce}]}</li>
-		</ul>
-	</div>
+
 	
 	<!-- <h1>{[{hello}]}</h1> -->
 	
