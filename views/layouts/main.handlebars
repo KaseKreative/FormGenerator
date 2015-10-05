@@ -14,9 +14,19 @@
 
 	<h1>Main</h1>
 
+	<h1>{[{ "hello" }]}</h1> 
+
+	  	<div ng-controller='infoCtrl' id='infoCtrl'>
+			<ul ng-repeat="data in info.stuff">
+				<li>{[{data.label}]}</li>
+				<li>{[{data.inputType}]}</li>
+				<li>{[{data.placeholder}]}</li>
+				<li>{[{data.pizzaSauce}]}</li>
+			</ul>
+		</div>
 
 	
-	<!-- <h1>{[{hello}]}</h1> -->
+	
 	
 	{{{ body }}}
 

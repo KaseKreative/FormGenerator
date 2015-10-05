@@ -27,13 +27,14 @@ var myApp = angular.module("myApp",["ui.router"])
 	 			var second = this;
 	 			second.greeting = greeting;
  		})
+ 		.controller('infoCtrl', infoCtrl);
 
 
 
 myApp.config(['$interpolateProvider',function ($interpolateProvider){
 	$interpolateProvider.startSymbol('{[{');
 	$interpolateProvider.endSymbol('}]}');
-}])
+}]);
 
 // HEAD
 
