@@ -87,7 +87,6 @@ myApp.factory('Info', function(){
 						checked : ''
 					},
 					{
-						label : 'Submit',
 						inputType : 'submit',
 						pizzaSauce : 'submitBtn',
 						value : 'Submit'
