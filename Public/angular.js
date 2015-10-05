@@ -75,7 +75,18 @@ myApp.factory('Info', function(){
 						value : 'Female',
 						name : 'theGender',
 						checked : ''
-					},	
+					},
+					{
+						label : 'Submit',
+						inputType : 'submit',
+						pizzaSauce : 'submitBtn',
+						value : 'Submit'
+					},
+					{
+						inputType : 'hidden',
+						pizzaSauce : 'hiddenInput',
+						placeholder : 'This is a hidden input!'
+					}	
 				];
 	return Info;
 })
