@@ -8,22 +8,14 @@
 	<script src="angular.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 </head>
-<body ng-app="formGen">
+<body>
 
 	<h1>{[{"Hello World!"}]}</h1>
 
 	<h1>Main</h1>
-	
-</head>
-<body>
 
-label : "First Name",
-						inputType : "text",
-						placeholder : "Michael",
-						pizzaSauce : "fName"
-
-	<div ng-controller="InfoCtrl" ng-repeat="data in info.stuff">
-		<ul>
+	<div ng-controller="InfoCtrl" >
+		<ul ng-repeat="data in info.stuff">
 			<li>{[{data.label}]}</li>
 			<li>{[{data.inputType}]}</li>
 			<li>{[{data.placeholder}]}</li>
