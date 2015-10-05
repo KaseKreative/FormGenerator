@@ -59,7 +59,23 @@ myApp.factory('Info', function(){
 						inputType : "text",
 						placeholder : "myemail@host.com",
 						pizzaSauce : "email"
-					}	
+					},
+					{
+						label : "Male",
+						inputType : "radio",
+						pizzaSauce : "gender",
+						value : 'Male',
+						name : 'theGender',
+						checked : 'checked'
+					},
+					{
+						label : 'Female',
+						inputType : "radio",
+						pizzaSauce : "gender",
+						value : 'Female',
+						name : 'theGender',
+						checked : ''
+					},	
 				];
 	return Info;
 })
