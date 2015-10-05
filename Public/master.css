@@ -1,13 +1,18 @@
+body{
+	background: url("http://www.twitterevolutions.com/bgs/twitter-background-vectors.jpg") fixed no-repeat center;
+}
+
 #infoCtrl{
-	background-color: red;
+	background-color: #E8C690;
 	width: 50%;
 	padding: 10px;
 	margin: 0 auto;
 }
 
 h1{
-	margin-left: 40%; 
+	margin-left: 38%; 
 	font-size: 2em;
+	font-family: 'Montserrat', sans-serif;
 }
 
 label{
