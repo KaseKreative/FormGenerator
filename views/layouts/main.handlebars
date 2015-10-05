@@ -10,20 +10,16 @@
 </head>
 <body ng-app="myApp">
 
-	<h1>{[{"Hello World!"}]}</h1>
+	  	<div ng-controller='infoCtrl' id='infoCtrl' >
+	  		<h1>Basic Form</h1> 
+	  		<div ng-repeat="data in info.stuff"> 
+				<label for ='{[{data.pizzaSauce}]}'>{[{data.label}]}</label>
+				<input type='{[{data.inputType}]}' id='{[{data.pizzaSauce}]}' placeholder='{[{data.placeholder}]}'>
+				</div>
+		</div>
 
-	<h1>Main</h1>
 
-	<div ng-controller="infoCtrl" >
-		<ul ng-repeat="data in info.stuff">
-			<li><label for="{[{data.pizzaSauce}]}">{[{data.label}]}</label></li>
-			<li><input type="{[{data.inputType}]}" placeholder="{[{data.placeholder}]}"></li>
-		</ul>
-	</div>
-
-	<h1>{[{ "hello" }]}</h1> 
-
-	
+		</br>
 	
 	{{{ body }}}
 

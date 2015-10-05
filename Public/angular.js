@@ -41,20 +41,20 @@ myApp.factory('Info', function(){
 	var Info = {};
 	Info.stuff = [
 					{
-						label : "First Name",
+						label : "First Name:",
 						inputType : "text",
 						placeholder : "Michael",
 						pizzaSauce : "fName"
 					},
 					{
-						label : "Last Name",
+						label : "Last Name:",
 						inputType : "text",
 						placeholder : "Perez",
 						pizzaSauce : "lName"
 					},	
 
 					{
-						label : "Email",
+						label : "Email:",
 						inputType : "text",
 						placeholder : "myemail@host.com",
 						pizzaSauce : "email"
