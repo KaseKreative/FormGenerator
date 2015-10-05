@@ -13,8 +13,8 @@
 	  	<div ng-controller='infoCtrl' id='infoCtrl' >
 	  		<h1>Basic Form</h1> 
 	  		<div ng-repeat="data in info.stuff"> 
-				<label for ='{[{data.pizzaSauce}]}'>{[{data.label}]}</label>
-				<input type='{[{data.inputType}]}' id='{[{data.pizzaSauce}]}' placeholder='{[{data.placeholder}]}'>
+				<label for ='{[{data.pizzaSauce}]}' class='{[{data.labelClass}]}' id="{[{data.labelId}]}">{[{data.label}]}</label>
+				<input type='{[{data.inputType}]}' id='{[{data.pizzaSauce}]}' placeholder='{[{data.placeholder}]}' name='{[{data.name}]}' value='{[{data.value}]}' />
 				</div>
 		</div>
 
