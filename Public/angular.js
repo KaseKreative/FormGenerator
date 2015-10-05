@@ -57,11 +57,11 @@ myApp.factory('Info', function(){
 						inputType : "text",
 						placeholder : "myemail@host.com",
 						pizzaSauce : "email"
-				}]
+				}];
 	return Info;
 })
 
-function InfoCtrl($scope, Info){
+function infoCtrl($scope, Info){
 	$scope.info = Info;
 }
 
