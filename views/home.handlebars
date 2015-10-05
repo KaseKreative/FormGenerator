@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Home Page
 
 	  	<div ng-controller='infoCtrl' id='infoCtrl' >
@@ -7,3 +8,11 @@ Home Page
 				<input type='{[{data.inputType}]}' id='{[{data.pizzaSauce}]}' placeholder='{[{data.placeholder}]}' name='{[{data.name}]}' value='{[{data.value}]}' />
 				</div>
 		</div>
+=======
+	<div ng-controller='infoCtrl' id='infoCtrl' >
+  		<h1>Basic Form</h1> 
+  		<div ng-repeat="data in info.stuff"> 
+			<label for ='{[{data.pizzaSauce}]}' class='{[{data.labelClass}]}' id="{[{data.labelId}]}">{[{data.label}]}</label>
+			<input type='{[{data.inputType}]}' id='{[{data.pizzaSauce}]}' placeholder='{[{data.placeholder}]}' name='{[{data.name}]}' value='{[{data.value}]}' />
+	</div>
+>>>>>>> 86e77d57329e6a8061e0d7cac2da0478f88c9813
