@@ -27,36 +27,39 @@ var myApp = angular.module("myApp",["ui.router"])
 	 			var second = this;
 	 			second.greeting = greeting;
  		})
+ 		.controller('infoCtrl', infoCtrl);
 
 
 
 myApp.config(['$interpolateProvider',function ($interpolateProvider){
 	$interpolateProvider.startSymbol('{[{');
 	$interpolateProvider.endSymbol('}]}');
-}])
+}]);
 
 
 myApp.factory('Info', function(){
 	var Info = {};
-	Info.stuff = [{
+	Info.stuff = [
+					{
 						label : "First Name",
 						inputType : "text",
 						placeholder : "Michael",
 						pizzaSauce : "fName"
-				},
+					},
 					{
 						label : "Last Name",
 						inputType : "text",
 						placeholder : "Perez",
 						pizzaSauce : "lName"
-				},	
+					},	
 
 					{
 						label : "Email",
 						inputType : "text",
 						placeholder : "myemail@host.com",
 						pizzaSauce : "email"
-				}];
+					}	
+				];
 	return Info;
 })
 
