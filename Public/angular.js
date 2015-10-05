@@ -43,12 +43,16 @@ myApp.factory('Info', function(){
 	Info.stuff = [
 					{
 						label : "First Name",
+						labelId : "fNameLabel",
+						labelClass : 'labelClass',
 						inputType : "text",
 						placeholder : "Michael",
 						pizzaSauce : "fName"
 					},
 					{
 						label : "Last Name",
+						labelId : "lNameLabel",
+						labelClass : 'labelClass',
 						inputType : "text",
 						placeholder : "Perez",
 						pizzaSauce : "lName"
@@ -56,12 +60,16 @@ myApp.factory('Info', function(){
 
 					{
 						label : "Email",
+						labelId : "emailLabel",
+						labelClass : 'labelClass',
 						inputType : "text",
 						placeholder : "myemail@host.com",
 						pizzaSauce : "email"
 					},
 					{
 						label : "Male",
+						labelId : "maleLabel",
+						labelClass : 'labelClass',
 						inputType : "radio",
 						pizzaSauce : "gender",
 						value : 'Male',
@@ -70,6 +78,8 @@ myApp.factory('Info', function(){
 					},
 					{
 						label : 'Female',
+						labelId : "femaleLabel",
+						labelClass : 'labelClass',
 						inputType : "radio",
 						pizzaSauce : "gender",
 						value : 'Female',
