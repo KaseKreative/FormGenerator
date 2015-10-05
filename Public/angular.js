@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var myApp = angular.module("myApp",["ui.router"])
 		   
 		.config(function config($stateProvider) {
@@ -41,23 +40,23 @@ myApp.config(['$interpolateProvider',function ($interpolateProvider){
 myApp.factory('Info', function(){
 	var Info = {};
 	Info.stuff = [{
-						label = "First Name",
-						inputType = "text",
-						placeholder = "Michael",
-						pizzaSauce = "fName"
+						label : "First Name",
+						inputType : "text",
+						placeholder : "Michael",
+						pizzaSauce : "fName"
 				},
 					{
-						label = "Last Name",
-						inputType = "text",
-						placeholder = "Perez",
-						pizzaSauce = "lName"
+						label : "Last Name",
+						inputType : "text",
+						placeholder : "Perez",
+						pizzaSauce : "lName"
 				},	
 
 					{
-						label = "Email",
-						inputType = "text",
-						placeholder = "myemail@host.com",
-						pizzaSauce = "email"
+						label : "Email",
+						inputType : "text",
+						placeholder : "myemail@host.com",
+						pizzaSauce : "email"
 				}]
 	return Info;
 })
