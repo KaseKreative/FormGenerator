@@ -32,12 +32,11 @@ var myApp = angular.module("myApp",["ui.router"])
 
 
 myApp.config(['$interpolateProvider',function ($interpolateProvider){
->>>>>>> 7b9956fcaf9c4a3957093eb7ef5d434eda5f1589
 	$interpolateProvider.startSymbol('{[{');
 	$interpolateProvider.endSymbol('}]}');
 }])
 
-<<<<<<< HEAD
+// HEAD
 
 myApp.factory('Info', function(){
 	var Info = {};
@@ -66,20 +65,4 @@ myApp.factory('Info', function(){
 function infoCtrl($scope, Info){
 	$scope.info = Info;
 }
-	
-	//------------------------------------------------------
-	.config(function config($stateProvider) {
-		$stateProvider.state("index", {
-			url:"",
-			controller: "FirstCtrl as first",
-			templateUrl: "views/first.html"
-		})
-	})
-	
-	.controller("FirstCtrl", function FirstCtrl(){
-		var first = this;
 
-		first.greeting = "First";
-	})
-	//------------------------------------------------------
->>>>>>> 7b9956fcaf9c4a3957093eb7ef5d434eda5f1589
