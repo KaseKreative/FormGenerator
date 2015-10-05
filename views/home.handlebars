@@ -1,10 +1,20 @@
+<h1>Home Page</h1>
+	  	<div ng-controller='infoCtrl' id='infoCtrl' >
+	  		<h1>Basic Form</h1> 
+	  		<div ng-repeat="data in info.stuff"> 
+				<label for ='{[{data.pizzaSauce}]}' class='{[{data.labelClass}]}' id="{[{data.labelId}]}">{[{data.label}]}</label>
+				<input type='{[{data.inputType}]}' id='{[{data.pizzaSauce}]}' placeholder='{[{data.placeholder}]}' name='{[{data.name}]}' value='{[{data.value}]}' />
+				</div>
+		</div>
 
-	<div ng-controller='infoCtrl' id='infoCtrl' >
+
+
+
+{{!-- WORKING JSON FORM --}}
+{{!-- 			<div ng-controller='jsonCtrl' id='jsonCtrl' >
   		<h1>Basic Form</h1> 
-  		<div ng-repeat="data in info.stuff"> 
+  		<div ng-repeat="data in data"> 
 			<label for ='{[{data.pizzaSauce}]}' class='{[{data.labelClass}]}' id="{[{data.labelId}]}">{[{data.label}]}</label>
 			<input type='{[{data.inputType}]}' id='{[{data.pizzaSauce}]}' placeholder='{[{data.placeholder}]}' name='{[{data.name}]}' value='{[{data.value}]}' />
 		</div>
-	</div>
-
-
+	</div> --}}

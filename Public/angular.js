@@ -28,6 +28,13 @@ var myApp = angular.module("myApp",["ui.router"])
 	 			second.greeting = greeting;
  		})
  		.controller('infoCtrl', infoCtrl);
+ 		// JSON CONTROLLER
+ 		myApp.controller('jsonCtrl', function($scope, $http){
+ 			$http.get('json/data.json')
+ 				.then(function(res){
+ 					$scope.data = res.data;
+ 				})
+ 		})
 
 
 
