@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="master.css">
 	<script src="angular/angular.js"></script>
 	<script src="angular.js"></script>
-{{!-- <<<<<<< HEAD --}}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 </head>
 <body ng-app="formGen">
@@ -14,15 +13,26 @@
 	<h1>{[{"Hello World!"}]}</h1>
 
 	<h1>Main</h1>
-{{!-- ======= --}}
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 	
 </head>
 <body>
+
+label : "First Name",
+						inputType : "text",
+						placeholder : "Michael",
+						pizzaSauce : "fName"
+
+	<div ng-controller="InfoCtrl" ng-repeat="data in info.stuff">
+		<ul>
+			<li>{[{data.label}]}</li>
+			<li>{[{data.inputType}]}</li>
+			<li>{[{data.placeholder}]}</li>
+			<li>{[{data.pizzaSauce}]}</li>
+		</ul>
+	</div>
 	
 	<!-- <h1>{[{hello}]}</h1> -->
 	
-{{!-- 7b9956fcaf9c4a3957093eb7ef5d434eda5f1589 --}}
 	{{{ body }}}
 
 	<ui-view></ui-view>

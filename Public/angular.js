@@ -61,7 +61,7 @@ myApp.factory('Info', function(){
 	return Info;
 })
 
-function infoCtrl($scope, Info){
+function InfoCtrl($scope, Info){
 	$scope.info = Info;
 }
 
