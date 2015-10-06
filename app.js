@@ -4,7 +4,18 @@ var express 	= require('express'),
 	exphbs      = require('express-handlebars'),
 	mongoose    = require('mongoose'),
 	port        = process.env.PORT || 3000;
-// mongoose.connect('mongodb://localhost:3000');
+
+
+	// Environmental variable
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+app.use( express.static(__dirname + '/Public'));
+app.use( express.static(__dirname + '/bower_components'));
+// DATABASE CONNECTION vvvvvvv
+mongoose.connect('mongodb://localhost:5000');
+
+mongoose.model('users', {name: String});
+
 // var Cat = mongoose.model('Cat', {name : String });
 // var kitty = new Cat({name: 'Cougar'});
 // kitty.save(function(err){
@@ -12,15 +23,17 @@ var express 	= require('express'),
 // 		console.log('meow');
 // 	}
 // })
-	// Environmental variable
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
-app.set('view engine', 'handlebars');
-app.use( express.static(__dirname + '/Public'));
-app.use( express.static(__dirname + '/bower_components'));
- 
+
+ // ROUTES -------------------------------
 app.get('/', function (req, res) {
   res.render('home');
 });
+
+app.get('/users', function (req, res) {
+	mongoose.model('users').find(_.function(err, users) {
+		res.send(users);
+	})
+})
 
 
 // myApp.directive('genForm', function(){
