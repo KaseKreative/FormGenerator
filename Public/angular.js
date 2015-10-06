@@ -1,5 +1,5 @@
 function(){
-var myApp = angular.module("myApp",["ui.router"])
+var myApp = angular.module("myApp",["ui.router", "ngRoute"])
 		   
 		.config(function config($stateProvider) {
 			$stateProvider.state('index',{
