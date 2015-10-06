@@ -1,3 +1,4 @@
+function(){
 var myApp = angular.module("myApp",["ui.router"])
 		   
 		.config(function config($stateProvider) {
@@ -109,4 +110,4 @@ myApp.factory('Info', function(){
 function infoCtrl($scope, Info){
 	$scope.info = Info;
 }
-
+)}();
