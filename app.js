@@ -13,11 +13,10 @@ var express 	= require('express'),
 // 	}
 // })
 	// Environmental variable
-process.env.PWD = process.cwd();
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
-app.use('/Public', express.static(process.env.PWD + '/Public'));
-app.use('/bower_components', express.static(process.env.PWD + '/bower_components'));
+app.use( express.static(__dirname + '/Public'));
+app.use( express.static(__dirname + '/bower_components'));
  
 app.get('/', function (req, res) {
   res.render('home');
