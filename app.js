@@ -15,8 +15,8 @@ var express 	= require('express'),
 	// Environmental variable
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
-app.use(express.static(__dirname + '/public'));
-app.use(express.static(__dirname + '/bower_components'));
+app.use('/public', express.static(process.env.PWD + '/public'));
+app.use('/bower_components', express.static(process.env.PWD + '/bower_components'));
  
 app.get('/', function (req, res) {
   res.render('home');
