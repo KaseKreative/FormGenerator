@@ -1,3 +1,4 @@
+process.env.PWD = process.cwd();
 var express 	= require('express'),
 	app 		= express(),
 	exphbs      = require('express-handlebars'),
@@ -12,7 +13,6 @@ var express 	= require('express'),
 // 	}
 // })
 	// Environmental variable
-process.env.PWD = process.cwd();
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.use(express.static(process.env.PWD + '/public'));
